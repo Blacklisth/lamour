@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour toi, mon amour ♡</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Polices romantiques depuis Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particules de cœurs en arrière-plan -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Contrôle de la musique -->
+    <button class="music-toggle" id="musicToggle" aria-label="Contrôle musique">
+        <span class="music-icon">♪</span>
+    </button>
+
+    <!-- Audio (musique douce) -->
+    <audio id="bgMusic" loop>
+        <!-- Utilisation d'une musique royalty-free depuis une source fiable -->
+        <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_2c4e5c3f6d.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Section principale -->
+    <main class="container">
+        
+        <!-- Section 1: Accueil avec prénom -->
+        <section class="section section-welcome" id="welcome">
+            <div class="content-wrapper fade-in">
+                <h1 class="main-title">
+                    <span class="small-text">Pour toi,</span>
+                    <span class="name-text" id="nameDisplay">Mon Amour</span>
+                </h1>
+                <p class="subtitle">Une lettre venue du cœur</p>
+                <div class="scroll-indicator">
+                    <span>↓</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Message d'amour -->
+        <section class="section section-message" id="message">
+            <div class="content-wrapper fade-in">
+                <div class="message-card">
+                    <div class="card-header">
+                        <span class="heart-icon">♡</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="message-text" id="messageDisplay">
+                            Chaque jour passé à tes côtés est un cadeau précieux. 
+                            Tu illumines ma vie comme le soleil illumine le monde. 
+                            Dans tes yeux, je trouve mon refuge, et dans ton sourire, 
+                            ma raison d'être. Je t'aime plus que les mots ne pourront jamais le dire.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="decorative-line"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Date importante -->
+        <section class="section section-date" id="date">
+            <div class="content-wrapper fade-in">
+                <div class="date-container">
+                    <h2 class="date-label">En ce jour magique</h2>
+                    <div class="date-display" id="dateDisplay">
+                        <span class="date-number">14</span>
+                        <span class="date-month">Février</span>
+                        <span class="date-year">2026</span>
+                    </div>
+                    <p class="date-description">
+                        Le jour où nos chemins se croisent et où tout va changer
+                    </p>
+                    <!-- Compteur de jours -->
+                    <div class="counter" id="dayCounter">
+                        <span class="counter-number">0</span>
+                        <span class="counter-label">jours ensemble</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Footer avec message final -->
+        <section class="section section-footer" id="footer">
+            <div class="content-wrapper fade-in">
+                <div class="final-message">
+                    <p class="final-text">
+                        "L'amour est la poésie des sens."
+                    </p>
+                    <p class="final-signature">
+                        À jamais tien, <br>
+                        <span class="signature-name">Ton âme sœur</span>
+                    </p>
+                </div>
+                <div class="hearts-cluster">
+                    <span class="heart">♥</span>
+                    <span class="heart">♥</span>
+                    <span class="heart">♥</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal de personnalisation (optionnel, pour configuration initiale) -->
+    <div class="modal" id="customModal">
+        <div class="modal-content">
+            <h2 class="modal-title">Personnalise ta lettre d'amour</h2>
+            <form id="customForm">
+                <div class="form-group">
+                    <label for="recipientName">Prénom de ton amour</label>
+                    <input type="text" id="recipientName" placeholder="Sophie" required>
+                </div>
+                <div class="form-group">
+                    <label for="loveMessage">Ton message d'amour</label>
+                    <textarea id="loveMessage" rows="6" placeholder="Écris ton message ici..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="importantDate">Date importante</label>
+                    <input type="date" id="importantDate" required>
+                </div>
+                <button type="submit" class="submit-btn">Créer ma lettre ♡</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
