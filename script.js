@@ -6,7 +6,7 @@
 const defaultConfig = {
     name: "Mon Amour",
     message: "Chaque jour passé à tes côtés est un cadeau précieux. Tu illumines ma vie comme le soleil illumine le monde. Dans tes yeux, je trouve mon refuge, et dans ton sourire, ma raison d'être. Je t'aime plus que les mots ne pourront jamais le dire.",
-    date: "2024-02-14" // Format: YYYY-MM-DD
+    date: "2026-02-14" // Format: YYYY-MM-DD
 };
 
 // ============================================
@@ -472,5 +472,6 @@ window.loveLetterUtils = {
         }
     }
 };
+
 
 console.log('💡 Astuce: Tape "loveLetterUtils" dans la console pour voir les fonctions disponibles!');
